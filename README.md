@@ -6,7 +6,8 @@ Expandable selection view is a dropdown selection view that unlike Android Spinn
 
 ### Changes:
 A fork of [Expandable Selection View](https://github.com/ashrafDoubleO7/ExpandableSelectionView) 
-- adding support for all Android DarkModes
+- Added support for Java language classes to use callbacks
+- Adding support for all Android DarkModes
 - Update to attr to support standard 'android:background' rather than custom 'app:background'
 - Updated to latest gradle and latest Kotlin versions
 - Added attribute 'android:entries' and 'android:hint' allowing list and hint text to be added using XML
