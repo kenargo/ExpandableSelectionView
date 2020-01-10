@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.ashraf007.expandableselectionview.Interfaces
+import com.ashraf007.expandableselectionview.ExpandableSelectionViewInterfaces
 import com.ashraf007.expandableselectionview.adapter.BasicStringAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
 
         singleSelectionWithEntries.selectIndex(currentDarkModeTheme)
 
-        singleSelectionWithEntries.setOnSelectionChange(Interfaces.SelectedItemChanged {
+        singleSelectionWithEntries.setOnSelectionChange(ExpandableSelectionViewInterfaces.SelectedItemChanged {
             Toast.makeText(this, "SelectedIndex is $it", Toast.LENGTH_SHORT).show()
 
             currentDarkModeTheme = it?.also {
@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity() {
         singleSelectionView.setAdapter(adapter)
         singleSelectionView.selectIndex(currentGenderSelection, false)
 
-        singleSelectionView.setOnSelectionChange(Interfaces.SelectedItemChanged {
+        singleSelectionView.setOnSelectionChange(ExpandableSelectionViewInterfaces.SelectedItemChanged {
             Toast.makeText(this, "SelectedIndex is $it", Toast.LENGTH_SHORT).show()
         })
 
@@ -141,7 +141,7 @@ class MainActivity : AppCompatActivity() {
         multiSelectionView.setAdapter(adapter)
         multiSelectionView.selectIndices(currentCountriesSelection, false)
 
-        multiSelectionView.setOnSelectionsChange(Interfaces.SelectedItemsChanged {
+        multiSelectionView.setOnSelectionsChange(ExpandableSelectionViewInterfaces.SelectedItemsChanged {
             Toast.makeText(this, "SelectedIndices are $it", Toast.LENGTH_SHORT).show()
         })
     }

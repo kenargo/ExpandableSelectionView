@@ -48,9 +48,9 @@ class ExpandableSingleSelectionView @JvmOverloads constructor(
         notifySelectionListener(null)
     }
 
-    private var onSelectionChangeListener: Interfaces.SelectedItemChanged? = null
+    private var onSelectionChangeListener: ExpandableSelectionViewInterfaces.SelectedItemChanged? = null
 
-    fun setOnSelectionChange(listener: Interfaces.SelectedItemChanged) {
+    fun setOnSelectionChange(listener: ExpandableSelectionViewInterfaces.SelectedItemChanged) {
         onSelectionChangeListener = listener
     }
 

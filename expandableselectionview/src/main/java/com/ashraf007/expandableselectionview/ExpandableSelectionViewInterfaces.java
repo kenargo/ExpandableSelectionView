@@ -2,7 +2,7 @@ package com.ashraf007.expandableselectionview;
 
 import java.util.List;
 
-public class Interfaces {
+public class ExpandableSelectionViewInterfaces {
 
     ////////////////////////////////////////////////////////////////////
     // TODO: Is there really no way to have one callback to satisfy both??

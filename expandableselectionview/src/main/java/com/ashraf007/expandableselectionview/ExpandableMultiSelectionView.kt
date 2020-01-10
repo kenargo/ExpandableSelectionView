@@ -61,9 +61,9 @@ class ExpandableMultiSelectionView @JvmOverloads constructor(
         }
     }
 
-    private var onSelectionsChangeListener: Interfaces.SelectedItemsChanged? = null
+    private var onSelectionsChangeListener: ExpandableSelectionViewInterfaces.SelectedItemsChanged? = null
 
-    fun setOnSelectionsChange(listener: Interfaces.SelectedItemsChanged) {
+    fun setOnSelectionsChange(listener: ExpandableSelectionViewInterfaces.SelectedItemsChanged) {
         onSelectionsChangeListener = listener
     }
 
